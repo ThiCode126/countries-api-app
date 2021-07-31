@@ -1,0 +1,36 @@
+header.header {
+  background: var(--back-2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+
+  .in-header {
+    @include flexSpaceBetween;
+    height: 80px;
+
+    h1.title {
+      @include text(14px, 20px);
+      font-weight: 800;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .theme-toggle {
+      @include flexCenter;
+      cursor: pointer;
+
+      img {
+        @include wh(16px);
+      }
+
+      span {
+        @include text(12px, 20px);
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+}

@@ -1,0 +1,20 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  background: var(--back-1);
+  color: var(--fore);
+}
+
+.cw {
+  width: 343px;
+  margin: 0 auto;
+}
+
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+  .cw {
+    width: 1280px;
+  }
+}

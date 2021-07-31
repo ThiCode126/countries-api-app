@@ -1,0 +1,126 @@
+.search {
+  @include pY(24px, 32px);
+
+  label {
+    display: none;
+  }
+
+  .filter-block {
+    background: var(--back-2);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+    padding: 14px 32px;
+
+    img {
+      @include wh(16px);
+      margin-right: 26px;
+    }
+    input[type="text"] {
+      border: 0;
+      outline: none;
+      @include text(12px, 20px);
+      color: var(--place);
+      width: 200px;
+    }
+  }
+
+  .region-block {
+    select#region {
+      background-color: var(--back-2);
+      box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+      border-radius: 5px;
+      margin-top: 40px;
+      padding-left: 24px;
+      border: 0;
+      outline: none;
+      @include wh(200px, 56px);
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 40px;
+  padding-bottom: 65px;
+
+  .card {
+    background: var(--back-2);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+    border-radius: 5px;
+    width: 264px;
+
+    img {
+      @include wh(264px, 160px);
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .body {
+      padding: 24px 0 46px 24px;
+
+      .name-country {
+        margin: 0 0 16px;
+        font-weight: 800;
+        @include text(18px, 26px);
+      }
+      p {
+        margin: 0;
+        @include text(14px, 16px);
+
+        &.region {
+          @include mY(8px);
+        }
+
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+  .search {
+    @include pY(48px);
+    .in-section {
+      @include flexSpaceBetween;
+    }
+
+    .filter-block {
+      width: 480px;
+      padding: 18px 32px;
+
+      img {
+        @include wh(18px);
+        margin-right: 2px;
+      }
+      input[type="text"] {
+        @include text(14px, 20px);
+        width: 350px;
+      }
+    }
+
+    .region-block {
+      select#region {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .cards {
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px 0;
+    padding-bottom: 45px;
+  }
+}

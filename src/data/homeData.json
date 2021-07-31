@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Germany",
+    "capital": "Berlin",
+    "region": "Europe",
+    "population": 81770900,
+    "flag": "https://restcountries.eu/data/deu.svg"
+  },
+  {
+    "name": "United States of America",
+    "capital": "Washington, D.C.",
+    "region": "Americas",
+    "population": 323947000,
+    "flag": "https://restcountries.eu/data/usa.svg"
+  },
+  {
+    "name": "Brazil",
+    "capital": "Brasília",
+    "region": "Americas",
+    "population": 206135893,
+    "flag": "https://restcountries.eu/data/bra.svg"
+  },
+  {
+    "name": "Iceland",
+    "capital": "Reykjavík",
+    "region": "Europe",
+    "population": 334300,
+    "flag": "https://restcountries.eu/data/isl.svg"
+  },
+  {
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "region": "Asia",
+    "population": 27657145,
+    "flag": "https://restcountries.eu/data/afg.svg"
+  },
+  {
+    "name": "Åland Islands",
+    "capital": "Mariehamn",
+    "region": "Europe",
+    "population": 28875,
+    "flag": "https://restcountries.eu/data/ala.svg"
+  },
+  {
+    "name": "Albania",
+    "capital": "Tirana",
+    "region": "Europe",
+    "population": 2886026,
+    "flag": "https://restcountries.eu/data/alb.svg"
+  },
+  {
+    "name": "Algeria",
+    "capital": "Algiers",
+    "region": "Africa",
+    "population": 40400000,
+    "flag": "https://restcountries.eu/data/dza.svg"
+  }
+
+]
