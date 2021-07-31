@@ -19,7 +19,7 @@ const Search = ({ filter, setFilter, region, setRegion }) => {
             onChange={e => setFilter(e.target.value)} />
         </div>
         <div className="region-block">
-          <label htmlFor="region">Search for a country...</label>
+          <label htmlFor="region">Select for a region...</label>
           <select id="region" value={region} onChange={e => setRegion(e.target.value)}>
             <option value="all">Filter by Region</option>
             <option value="Africa">Africa</option>
