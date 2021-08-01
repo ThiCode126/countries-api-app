@@ -9,18 +9,24 @@ const Search = ({ filter, setFilter, region, setRegion }) => {
     <section className="search">
       <div className="cw in-section">
         <div className="filter-block">
-          <label htmlFor="filter">Search for a country...</label>
           <img src={SearchSvg} alt="search" />
           <input
             id="filter"
             type="text"
             placeholder="Search for a country..."
+            aria-label="Search for a country..."
             value={filter}
-            onChange={e => setFilter(e.target.value)} />
+            onChange={e => setFilter(e.target.value)}
+          />
         </div>
         <div className="region-block">
-          <label htmlFor="region">Select for a region...</label>
-          <select id="region" value={region} onChange={e => setRegion(e.target.value)}>
+          <select
+            id="region"
+            name="region"
+            aria-label="Search for a region..."
+            value={region}
+            onChange={e => setRegion(e.target.value)}
+          >
             <option value="all">Filter by Region</option>
             <option value="Africa">Africa</option>
             <option value="Americas">Americas</option>
