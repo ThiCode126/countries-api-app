@@ -20,8 +20,10 @@
       padding: 0;
       outline: none;
       @include text(12px, 20px);
-      color: var(--place);
       width: 200px;
+      &::placeholder {
+        color: var(--place);
+      }
     }
   }
 
@@ -100,7 +102,7 @@
 
       img {
         @include wh(18px);
-        margin-right: 2px;
+        margin-right: 24px;
       }
       input[type="text"] {
         @include text(14px, 20px);
