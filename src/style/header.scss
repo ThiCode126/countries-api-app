@@ -33,4 +33,21 @@ header.header {
 * ? DeskTop
 */
 @media (min-width: 1440px) {
+  header.header {
+    .in-header {
+      h1.title {
+        @include text(24px, 33px);
+      }
+
+      .theme-toggle {
+        img {
+          @include wh(20px);
+        }
+
+        span {
+          @include text(16px, 222px);
+        }
+      }
+    }
+  }
 }
